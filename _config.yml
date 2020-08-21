@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Brian Chao"
-  avatar           : "profile.png"
+  avatar           : "images/profile.png"
   bio              : "Undergraduate researcher at National Taiwan University"
   location         : "Taipei, Taiwan"
   employer         :

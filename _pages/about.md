@@ -89,10 +89,28 @@ Outside of research, I spend most of my time creating open source projects, garn
   <img src="../images/projects/hdr.png" width=200>
 </p>
 
-- [Seam Carving](https://github.com/bchao1/seam-carving) - Exploring the interesting idea of content-aware image resizing by implementing the algorithm presented in the [SIGGRAPH 2007 paper](https://perso.crans.org/frenoy/matlab2012/seamcarving.pdf).
+- [Seam Carving](https://github.com/bchao1/seam-carving) - Exploring content-aware image resizing featured in the [SIGGRAPH 2007 paper](https://perso.crans.org/frenoy/matlab2012/seamcarving.pdf).
 - [Homography](https://github.com/bchao1/homography) - A command-line tool to easily project photos onto another by computing homography.
 - [Quantization](https://github.com/bchao1/quantization) - In this project, I explore a plethora of image quantization methods such as [Otsu's method](https://en.wikipedia.org/wiki/Otsu%27s_method), [Median Cut](https://en.wikipedia.org/wiki/Median_cut), [Kmeans++](https://en.wikipedia.org/wiki/K-means%2B%2B) and etc.
 - [High Dynamic Range Imaging](https://github.com/bchao1/High-Dynamic-Range-Imaging) - Revisiting the OG HDR imaging algorithm proposed by [Debevec et al.](http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf).
+
+***
+
+### Machine Learning Projects
+
+<p align="center">
+  <img src="../images/projects/pong.gif" width=200>
+  <img src="../images/projects/breakout.gif" width=200>
+</p>
+<p align="center">
+  <img src="../images/projects/anime.png" width=200>
+  <img src="../images/projects/transfer.png" width=200>
+</p>
+
+- [Pong](https://github.com/bchao1/Pong-Policy-Gradient) - I trained an AI agent to play Pong with Policy Gradient.
+- [Breakout](https://github.com/bchao1/Breakout-Deep-Q-Learning) - I trained an AI agent to play Breakout with Deep-Q-Learning and experience replay.
+- [Anime Generation](https://github.com/bchao1/Anime-Generation) - I trained an AI to draw anime characters with different hair styles and eye colors using ACGAN and Conditional GAN. The [custom dataset](https://github.com/bchao1/Anime-Face-Dataset) I collected was also used by many people on [Kaggle](https://www.kaggle.com/splcher/animefacedataset/notebooks) and students in NTU's [Machine Learning](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html) Course.
+- [Style Transfer](https://github.com/bchao1/Style-Transfer) - I trained an AI to draw like different artists using Neural Style Transfer.
 
 ***
 
@@ -107,7 +125,7 @@ Outside of research, I spend most of my time creating open source projects, garn
   <img src="../images/google.png" width=150>
 </p>
 
-Google's SWE internship was cancelled due to the COVID-19 outbreak, and I was invited to participate in the [Google Software Product Sprint](https://buildyourfuture.withgoogle.com/programs/softwareproductsprint/) as a result.
+Google's SWE internship was cancelled due to the COVID-19 outbreak. As a result, I was invited to participate in the [Google Software Product Sprint](https://buildyourfuture.withgoogle.com/programs/softwareproductsprint/).
 
 I worked on an image-processing web application with that supports many image processing algorithms and image sharing features using Javascript, jQuery, HTML, CSS, and Flask. 
 

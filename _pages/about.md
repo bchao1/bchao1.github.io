@@ -16,6 +16,7 @@ Outside of research, I spend most of my time creating open source projects, garn
 - [Side Projects](#project)
 - [Industry Experience](#work)
 - [Teaching Experience](#teach)
+- [Leadership Experience](#leader)
 
 <a name="pub"></a>
 # Publications
@@ -155,4 +156,23 @@ I was the second undergrad sophomore to intern at [WorldQuant Taiwan](https://ww
 
 In this talk, I go through the basics of Domain Adaptation and introduce both classic papers and its recent development. The talk is given at [Machine Learning, Spring 2020](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html) at National Taiwan University.
 
+***
 
+<a name="leader"></a>
+
+# Leadership Experiences
+
+### Director of NTUEESA Information Department
+
+> **August, 2019 ~ July, 2020**
+
+I served as the **Director of Information Department** at NTUEESA (National Taiwan Unveristy Dept. of Electrical Engineering Student's Association) from August, 2019 to July, 2020. 
+
+During my service, I lead a team of 30+ students to manage websites for NTUEE events, gave bi-weekly lectures on web development, and helped organize experience sharing receptions.
+
+Here are some works of me and my colleagues:
+- Our depository on [Github](https://github.com/NTUEEInfoDep)
+- The website for [MakeNTU](https://make.ntuee.org), the largest Makeathon in Taiwan.
+- Our [Guide](https://github.com/NTUEEInfoDep/Server-Guide) to our own server.
+- Our lectures on [Web Development](https://github.com/NTUEEInfoDep/Web_Lecture).
+- Our lectures on [Algorithms and C++ STL](https://github.com/NTUEEInfoDep/Algorithms_Lecture).

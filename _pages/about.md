@@ -97,7 +97,7 @@ Outside of research, I spend most of my time creating open source projects, garn
 
 Google's SWE internship was cancelled due to the COVID-19 outbreak, and I was invited to participate in the [Google Software Product Sprint](https://buildyourfuture.withgoogle.com/programs/softwareproductsprint/) as a result.
 
-I worked on a image-processing application with editing and sharing features using Javascript, jQuery, HTML, CSS, and Flask. 
+I worked on an image-processing web application with that supports many image processing algorithms and image sharing features using Javascript, jQuery, HTML, CSS, and Flask. 
 
 ### WorldQuant
 

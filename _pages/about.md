@@ -72,10 +72,15 @@ Outside of research, I spend most of my time creating open source projects, garn
 ### Image Processing Projects
 
 <p align="center">
-  <img src="../images/projects/seam.gif" width=200 href="https://github.com/bchao1/seam-carving">
-  <img src="../images/projects/homography.jpg" width=200 href="https://github.com/bchao1/homography">
+  <img src="../images/projects/seam.gif" width=200>
+  <img src="../images/projects/homography.jpg" width=200>
 </p>
 <p align="center">
-  <img src="../images/projects/quantize.png" width=200 href="https://github.com/bchao1/quantization">
-  <img src="../images/projects/hdr.png" width=200 href="https://github.com/bchao1/High-Dynamic-Range-Imaging">
+  <img src="../images/projects/quantize.png" width=200>
+  <img src="../images/projects/hdr.png" width=200>
 </p>
+
+- [Seam Carving](https://github.com/bchao1/seam-carving) - Exploring the interesting idea of content-aware image resizing by implementing the algorithm presented in the [SIGGRAPH 2007 paper](https://perso.crans.org/frenoy/matlab2012/seamcarving.pdf).
+- [Homography](https://github.com/bchao1/homography) - A command-line tool to easily project photos onto another by computing homography.
+- [Quantization](https://github.com/bchao1/quantization) - In this project, I explore a plethora of image quantization methods such as [Otsu's method](https://en.wikipedia.org/wiki/Otsu%27s_method), [Median Cut](https://en.wikipedia.org/wiki/Median_cut), [Kmeans++](https://en.wikipedia.org/wiki/K-means%2B%2B) and etc.
+- [High Dynamic Range Imaging](https://github.com/bchao1/High-Dynamic-Range-Imaging) - Revisiting the OG HDR imaging algorithm proposed by [Debevec et al.](http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf).

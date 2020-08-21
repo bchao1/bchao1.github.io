@@ -14,9 +14,8 @@ Outside of research, I spend most of my time creating open source projects, garn
 
 # Publications
 
-||||
-|--|--|--|
-|[Self-Supervised Deep Learning for Fisheye Image Rectification](https://ieeexplore.ieee.org/document/9054191)|ICASSP 2020|**Chun-Hao Chao** ; Pin-Lun Hsu ; Hung-Yi Lee ; Yu-Chiang Frank Wang|
+### [Self-Supervised Deep Learning for Fisheye Image Rectification](https://ieeexplore.ieee.org/document/9054191)
+**Chun-Hao Chao** ; Pin-Lun Hsu ; Hung-Yi Lee ; Yu-Chiang Frank Wang, accepted to **ICASSP 2020**
 
 # Side Projects
 

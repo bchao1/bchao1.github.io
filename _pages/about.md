@@ -12,11 +12,20 @@ I am a senior undergraduate researcher at National Taiwan University. My researc
 
 Outside of research, I spend most of my time creating open source projects, garnering over 3.9k stars on Github. I've built a [Python package with over 100k downloads](https://github.com/bchao1/bullet), a [React visualization tool](https://github.com/bchao1/chart-race-react), a [Renderer in Go](https://github.com/bchao1/go-render), and many more, most of which with a visual aspect. Checkout my work [here](https://github.com/bchao1).
 
+- [Publications](#pub)
+- [Side Projects](#project)
+- [Industry Experience](#work)
+- [Teaching Experience](#teach)
+
+<a name="pub"></a>
 # Publications
 
 ### [Self-Supervised Deep Learning for Fisheye Image Rectification](https://ieeexplore.ieee.org/document/9054191)
 **Chun-Hao Chao** ; Pin-Lun Hsu ; Hung-Yi Lee ; Yu-Chiang Frank Wang, accepted to **ICASSP 2020**
 
+***
+
+<a name="project"></a>
 # Side Projects
 
 ### `bullet`
@@ -85,6 +94,9 @@ Outside of research, I spend most of my time creating open source projects, garn
 - [Quantization](https://github.com/bchao1/quantization) - In this project, I explore a plethora of image quantization methods such as [Otsu's method](https://en.wikipedia.org/wiki/Otsu%27s_method), [Median Cut](https://en.wikipedia.org/wiki/Median_cut), [Kmeans++](https://en.wikipedia.org/wiki/K-means%2B%2B) and etc.
 - [High Dynamic Range Imaging](https://github.com/bchao1/High-Dynamic-Range-Imaging) - Revisiting the OG HDR imaging algorithm proposed by [Debevec et al.](http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf).
 
+***
+
+<a name="work"></a>
 # Industry Experience
 
 ### Google
@@ -109,6 +121,9 @@ I worked on an image-processing web application with that supports many image pr
 
 I was the second undergrad sophomore to intern at [WorldQuant Taiwan](https://www.worldquant.com/home/). I worked on finding trading algorithms (*alphas*) with Python, and won the **Best Price-Volume Alpha** award.
 
+***
+
+<a name="teach"></a>
 # Teaching Experience
 
 - **Machine Learning, Spring 2020** *by Prof. Hung-yi Lee* - I was in charge of the design and grading of the **[Convolutional Neural Networks](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html)** project.

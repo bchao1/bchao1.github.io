@@ -84,3 +84,18 @@ Outside of research, I spend most of my time creating open source projects, garn
 - [Homography](https://github.com/bchao1/homography) - A command-line tool to easily project photos onto another by computing homography.
 - [Quantization](https://github.com/bchao1/quantization) - In this project, I explore a plethora of image quantization methods such as [Otsu's method](https://en.wikipedia.org/wiki/Otsu%27s_method), [Median Cut](https://en.wikipedia.org/wiki/Median_cut), [Kmeans++](https://en.wikipedia.org/wiki/K-means%2B%2B) and etc.
 - [High Dynamic Range Imaging](https://github.com/bchao1/High-Dynamic-Range-Imaging) - Revisiting the OG HDR imaging algorithm proposed by [Debevec et al.](http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf).
+
+# Teaching Experience
+
+- **Machine Learning, Spring 2020** *by Prof. Hung-yi Lee* - I was in charge of the design and grading of the **[Convolutional Neural Networks](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html)** project.
+
+- **Signals and Systems, Spring 2020** *by Prof. Lin-shan Lee*
+
+## Short talks
+### Domain Adaptation Primer
+
+[![img](../images/da-talk.png)](https://www.youtube.com/watch?v=gvfLq4sPW4k)
+
+In this talk, I go through the basics of Domain Adaptation and introduce both classic papers and its recent development. The talk is given at [Machine Learning, Spring 2020](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html) at National Taiwan University.
+
+

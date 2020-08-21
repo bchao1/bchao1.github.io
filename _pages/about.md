@@ -52,7 +52,7 @@ Outside of research, I spend most of my time creating open source projects, garn
   <img src="../images/projects/camera.gif" width=200>
 </p>
 
-[**go-render**](https://github.com/bchao1/go-render) is a software rasterization-based renderer written in pure Golang. It supports rendering features such as multiple shading algorithms, textures, camera, custom lighting, and etc.
+[**go-render**](https://github.com/bchao1/go-render) is a software rasterization-based renderer written in pure Golang. It supports rendering features such as multiple shading algorithms, textures, camera, custom lighting (ambient, diffuse, spectral), and etc.
 
 ***
 
@@ -66,3 +66,16 @@ Outside of research, I spend most of my time creating open source projects, garn
 
 - Over **2k** downloads on PyPI
 - Over **220 stars** on Github, and has been on [Github Trending](https://github.com/trending).
+
+***
+
+### Image Processing Projects
+
+<p align="center">
+  <img src="../images/projects/seam.gif" width=200 href="https://github.com/bchao1/seam-carving">
+  <img src="../images/projects/homography.jpg" width=200 href="https://github.com/bchao1/homography">
+</p>
+<p align="center">
+  <img src="../images/projects/quantize.png" width=200 href="https://github.com/bchao1/quantization">
+  <img src="../images/projects/hdr.png" width=200 href="https://github.com/bchao1/High-Dynamic-Range-Imaging">
+</p>

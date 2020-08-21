@@ -92,7 +92,7 @@ Outside of research, I spend most of my time creating open source projects, garn
 > **Software Product Sprint Participant, Summer 2020**
 
 <p align="center">
-  <img src="../images/google.png" width=300>
+  <img src="../images/google.png" width=150>
 </p>
 
 Google's SWE internship was cancelled due to the COVID-19 outbreak, and I was invited to participate in the [Google Software Product Sprint](https://buildyourfuture.withgoogle.com/programs/softwareproductsprint/) as a result.

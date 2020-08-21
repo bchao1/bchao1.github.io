@@ -24,7 +24,11 @@ Outside of research, I spend most of my time creating open source projects, garn
   <img src="../images/projects/bullet.gif" width=200>
 </p>
 
-[**bullet**](https://github.com/bchao1/bullet) is a scalable and customizable Python interactive prompts library built with an aesthetic focus with over **100k downloads** on PyPI and **2.9k+ stars** on Github. It has been on [Github Trending](https://github.com/trending) and has been featured on the [Python Bytes](https://pythonbytes.fm) podcast.
+[**bullet**](https://github.com/bchao1/bullet) is a scalable and fully customizable Python interactive prompts library built with a focus on aesthetics, clarity, and convenience.
+
+- Over **100k downloads** on PyPI. This is verified by the [Google Big Query API](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi4iOe8jqzrAhXSqZYKHbkEC2sYABABGgJ0bA&ohost=www.google.com&cid=CAESQOD2uZWdS5DCp5AVcioA82ozmPd0_GGGkaohUl6HGxTwjZ6jsDUDUjL6AL2IY6RNl_5DWaGydR0TMiPrRvfmJcI&sig=AOD64_1eKE-GEgD7kBc_WWnrpA4NybtosQ&q&adurl&ved=2ahUKEwibgt68jqzrAhXhIqYKHY1rB30Q0Qx6BAgOEAE).
+- Over **2900+ stars**, **90 forks** on Github
+- It has been on [Github Trending](https://github.com/trending) and has been featured on the [Python Bytes](https://pythonbytes.fm) podcast.
 
 ### `chart-race-react`
 
@@ -32,15 +36,19 @@ Outside of research, I spend most of my time creating open source projects, garn
   <img src="../images/projects/chart.gif" width=200>
 </p>
 
-[**chart-race-react**](https://github.com/bchao1/chart-race-react) is a React visualization tool for creating bar-chart races with **1k+ downloads** on npm and **370+ stars** on Github.
+[**chart-race-react**](https://github.com/bchao1/chart-race-react) is a fully customizable React visualization tool for creating bar-chart races.
+
+- Over **1k downloads** on npm
+- Over **370 stars** on Github.
 
 ### `go-render`
 
 <p align="center">
   <img src="../images/projects/render.gif" width=200>
+  <img src="../images/projects/camera.gif" width=200>
 </p>
 
-[**go-render**](https://github.com/bchao1/go-render) is a software rasterization-based renderer written in pure Golang. It supports basic rendering features such as shading, textures, camera, lighting.
+[**go-render**](https://github.com/bchao1/go-render) is a software rasterization-based renderer written in pure Golang. It supports rendering features such as multiple shading algorithms, textures, camera, custom lighting, and etc.
 
 ### `vocab`
 
@@ -48,4 +56,7 @@ Outside of research, I spend most of my time creating open source projects, garn
   <img src="../images/projects/vocab.gif" width=200>
 </p>
 
-[**vocabs**](https://github.com/bchao1/vocabs) is a full-fledged command line dictionary written in pure Python. It has **2k+** downloads on PyPI, **220+ stars** on Github, and has been on [Github Trending](https://github.com/trending).
+[**vocabs**](https://github.com/bchao1/vocabs) is a full-fledged command line dictionary written in pure Python. It supports a wide range of operations such as querying and editing words, exporting word lists, and interactive anki-like vocabulary game.
+
+- Over **2k** downloads on PyPI
+- Over **220 stars** on Github, and has been on [Github Trending](https://github.com/trending).

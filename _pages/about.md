@@ -21,7 +21,7 @@ Outside of research, I spend most of my time creating open source projects, garn
 
 ### `bullet`
 <p align="center">
-  <img src="../images/projects/bullet.gif" width=200>
+  <img src="../images/projects/bullet.gif" width=400>
 </p>
 
 [**bullet**](https://github.com/bchao1/bullet) is a scalable and fully customizable Python interactive prompts library built with a focus on aesthetics, clarity, and convenience.
@@ -30,16 +30,20 @@ Outside of research, I spend most of my time creating open source projects, garn
 - Over **2900+ stars**, **90 forks** on Github
 - It has been on [Github Trending](https://github.com/trending) and has been featured on the [Python Bytes](https://pythonbytes.fm) podcast.
 
+***
+
 ### `chart-race-react`
 
 <p align="center">
-  <img src="../images/projects/chart.gif" width=200>
+  <img src="../images/projects/chart.gif" width=400>
 </p>
 
 [**chart-race-react**](https://github.com/bchao1/chart-race-react) is a fully customizable React visualization tool for creating bar-chart races.
 
 - Over **1k downloads** on npm
 - Over **370 stars** on Github.
+
+***
 
 ### `go-render`
 
@@ -50,10 +54,12 @@ Outside of research, I spend most of my time creating open source projects, garn
 
 [**go-render**](https://github.com/bchao1/go-render) is a software rasterization-based renderer written in pure Golang. It supports rendering features such as multiple shading algorithms, textures, camera, custom lighting, and etc.
 
+***
+
 ### `vocab`
 
 <p align="center">
-  <img src="../images/projects/vocab.gif" width=200>
+  <img src="../images/projects/vocab.gif" width=400>
 </p>
 
 [**vocabs**](https://github.com/bchao1/vocabs) is a full-fledged command line dictionary written in pure Python. It supports a wide range of operations such as querying and editing words, exporting word lists, and interactive anki-like vocabulary game.

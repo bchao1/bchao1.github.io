@@ -19,9 +19,33 @@ Outside of research, I spend most of my time creating open source projects, garn
 
 # Side Projects
 
-|||
-|--|--|
-|![img](../images/projects/bullet.gif)|[**bullet**](https://github.com/bchao1/bullet) is a scalable and customizable Python interactive prompts library built with an aesthetic focus with over **100k downloads** on PyPI and **2.9k+ stars** on Github. It has been on [Github Trending](https://github.com/trending) and has been featured on the [Python Bytes](https://pythonbytes.fm) podcast.|
-|![img](../images/projects/chart.gif)|[**chart-race-react**](https://github.com/bchao1/chart-race-react) is a React visualization tool for creating bar-chart races with **1k+ downloads** on npm and **370+ stars** on Github.|
-|![img](../images/projects/render.gif)|[**go-render**](https://github.com/bchao1/go-render) is a software rasterization-based renderer written in pure Golang. It supports basic rendering features such as shading, textures, camera, lighting.|
-|![img](../images/projects/vocab.gif)|[**vocabs**](https://github.com/bchao1/vocabs) is a full-fledged command line dictionary written in pure Python. It has **2k+** downloads on PyPI, **220+ stars** on Github, and has been on [Github Trending](https://github.com/trending).|
+### `bullet`
+<p align="center">
+  <img src="../images/projects/bullet.gif" width=200>
+</p>
+
+[**bullet**](https://github.com/bchao1/bullet) is a scalable and customizable Python interactive prompts library built with an aesthetic focus with over **100k downloads** on PyPI and **2.9k+ stars** on Github. It has been on [Github Trending](https://github.com/trending) and has been featured on the [Python Bytes](https://pythonbytes.fm) podcast.
+
+### `chart-race-react`
+
+<p align="center">
+  <img src="../images/projects/chart.gif" width=200>
+</p>
+
+[**chart-race-react**](https://github.com/bchao1/chart-race-react) is a React visualization tool for creating bar-chart races with **1k+ downloads** on npm and **370+ stars** on Github.
+
+### `go-render`
+
+<p align="center">
+  <img src="../images/projects/render.gif" width=200>
+</p>
+
+[**go-render**](https://github.com/bchao1/go-render) is a software rasterization-based renderer written in pure Golang. It supports basic rendering features such as shading, textures, camera, lighting.
+
+### `vocab`
+
+<p align="center">
+  <img src="../images/projects/vocab.gif" width=200>
+</p>
+
+[**vocabs**](https://github.com/bchao1/vocabs) is a full-fledged command line dictionary written in pure Python. It has **2k+** downloads on PyPI, **220+ stars** on Github, and has been on [Github Trending](https://github.com/trending).

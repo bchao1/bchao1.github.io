@@ -85,6 +85,30 @@ Outside of research, I spend most of my time creating open source projects, garn
 - [Quantization](https://github.com/bchao1/quantization) - In this project, I explore a plethora of image quantization methods such as [Otsu's method](https://en.wikipedia.org/wiki/Otsu%27s_method), [Median Cut](https://en.wikipedia.org/wiki/Median_cut), [Kmeans++](https://en.wikipedia.org/wiki/K-means%2B%2B) and etc.
 - [High Dynamic Range Imaging](https://github.com/bchao1/High-Dynamic-Range-Imaging) - Revisiting the OG HDR imaging algorithm proposed by [Debevec et al.](http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf).
 
+# Industry Experience
+
+### Google
+
+> **Software Product Sprint Participant, Summer 2020**
+
+<p align="center">
+  <img src="../images/google.jpg" width=300>
+</p>
+
+Google's SWE internship was cancelled due to the COVID-19 outbreak, and I was invited to participate in the [Google Software Product Sprint](https://buildyourfuture.withgoogle.com/programs/softwareproductsprint/) as a result.
+
+I worked on a image-processing application with editing and sharing features using Javascript, jQuery, HTML, CSS, and Flask. 
+
+### WorldQuant
+
+> **Quantitative Finance Research Intern, Winter 2019** 
+
+<p align="center">
+  <img src="../images/wq.png" width=300>
+</p>
+
+I was the second undergrad sophomore to intern at [WorldQuant Taiwan](https://www.worldquant.com/home/). I worked on finding trading algorithms (*alphas*) with Python, and won the **Best Price-Volume Alpha** award.
+
 # Teaching Experience
 
 - **Machine Learning, Spring 2020** *by Prof. Hung-yi Lee* - I was in charge of the design and grading of the **[Convolutional Neural Networks](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html)** project.

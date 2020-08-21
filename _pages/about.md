@@ -12,13 +12,13 @@ I am a senior undergraduate researcher at National Taiwan University. My researc
 
 Other than research, I spend most of my time creating open source projects, garnering over 3.9k stars on Github. I've built a [Python package with over 100k downloads](https://github.com/bchao1/bullet), a [React visualization tool](https://github.com/bchao1/chart-race-react), a [Renderer in Go](https://github.com/bchao1/go-render), and many more, most of which with a visual aspect. Checkout my work [here](https://github.com/bchao1).
 
-## Publications
+# Publications
 
 ||||
 |--|--|--|
 |[Self-Supervised Deep Learning for Fisheye Image Rectification](https://ieeexplore.ieee.org/document/9054191)|ICASSP 2020|**Chun-Hao Chao** ; Pin-Lun Hsu ; Hung-Yi Lee ; Yu-Chiang Frank Wang|
 
-## Side Projects
+# Side Projects
 
 |||
 |--|--|

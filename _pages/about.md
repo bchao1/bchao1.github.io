@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a senior undergraduate researcher at National Taiwan University. My research interest lies in the intersection of computer graphics and 3D vision. I am particularly focused on the **Multimodality for 3D Representations**, aiming to learn robust features across multiple 3D representations (point clouds, mesh, multi-view images ...) through various self-supervised learning techniques.
+I am a senior undergraduate researcher at National Taiwan University. My research interest lies in the intersection of computer graphics and 3D vision. Currently, I am working on light field processing and its applications. 
 
 I work under the supervision of [Prof. Yu-Chaing Frank Wang](http://www.ee.ntu.edu.tw/profile1.php?id=1060727) and [Prof. Homer Chen](https://www.ee.ntu.edu.tw/bio1.php?id=60). I've recieved NTU Presidential Award for top 5% students 4 times (Rank: 5/261), and is the recipient of the National Taiwan University Alumni Scholarship (awarded to 2 EECS students each year).
 
@@ -22,6 +22,9 @@ Outside of research, I spend most of my time creating open source projects, garn
 
 <a name="pub"></a>
 # Publications
+
+### Self-Supervised Deep Learning for Fisheye Image Rectification
+**Chun-Hao Chao** ; Chang-Le Liu ; Homer H. Chen, submitted to **ICIP 2021**
 
 ### [Self-Supervised Deep Learning for Fisheye Image Rectification](https://ieeexplore.ieee.org/document/9054191)
 **Chun-Hao Chao** ; Pin-Lun Hsu ; Hung-Yi Lee ; Yu-Chiang Frank Wang, accepted to **ICASSP 2020**

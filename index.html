@@ -29,7 +29,10 @@
                   I'm grateful to be supported by the <a href="https://www.nsfgrfp.org/">NSF GRFP</a> and the <a href="https://vpge.stanford.edu/fellowships-funding/sgf">Stanford Graduate Fellowship</a>.
                 </p>
                 <p>
-                  My work draws on first principles in vision and graphics to develop efficient visual world representations across image, video, and 3D domains, including token-efficient generation and adaptive tokenization (<a href="https://bchao1.github.io/foveated-diffusion/">Foveated Diffusion</a>), novel 3D representations (<a href="https://textured-gaussians.github.io/">Textured Gaussians</a>), and fast rendering algorithms (<a href="https://bchao1.github.io/gaussian-wave-splatting/">GWS</a>).
+                  My work draws on first principles in vision and graphics to develop efficient visual world representations across image, video, and 3D domains, including 
+                  token-efficient generation and adaptive tokenization (<a href="https://bchao1.github.io/foveated-diffusion/">Foveated Diffusion</a>, <a href="https://howardxiao.ca/speed/">Spectral Progressive Diffusion</a>), 
+                  novel 3D representations (<a href="https://textured-gaussians.github.io/">Textured Gaussians</a>), 
+                  and fast rendering algorithms (<a href="https://bchao1.github.io/gaussian-wave-splatting/">GWS</a>).
                 </p>
                 <p>
                   I've spent two summers at Meta Reality Labs, where I worked on neural rendering for 3D reconstruction and next-generation computational AR/VR displays.
@@ -65,6 +68,37 @@
                 <div class="one" style="display: flex; justify-content: center; align-items: center;">
                   <div class="two" id='smerf_image' style="width: 100%; display: flex; justify-content: center; align-items: center;">
                     <video width=100% muted autoplay loop style="max-width: 100%; height: auto; display: block;">
+                      <source src="images/spd.webm" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="" width=100% style="display: none;">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://howardxiao.ca/speed/">
+                  <span class="papertitle">Spectral Progressive Diffusion for Efficient Image and Video Generation</span>
+                </a>
+                <br>
+                <a href="https://howardxiao.ca/">Howard Xiao</a>,
+                <strong>Brian Chao</strong>,
+                <a href="https://lioryariv.github.io/">Lior Yariv</a>,
+                <a href="https://web.stanford.edu/~gordonwz/">Gordon Wetzstein</a>
+                <br>
+                <em>arXiv</em>, 2026
+                <br>
+                <p></p>
+                <p>
+                  A plug-and-play framework for efficient image and video generation acceleration,
+                  using the intrinsic diffusion property of spectral autoregression.
+                </p>
+              </td>
+            </tr>
+            <tr style="background-color: #ffffd0;">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="display: flex; justify-content: center; align-items: center;">
+                  <div class="two" id='smerf_image' style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                    <video width=100% muted autoplay loop style="max-width: 100%; height: auto; display: block;">
                       <source src="images/foveated_diffusion.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
@@ -87,11 +121,12 @@
                 <em>Work presented through invited talks at NVIDIA Research, Rhoda AI, Black Forest Labs, Cohere, and Decart.</em>
                 <p></p>
                 <p>
-                  A biologically-inspired diffusion framework that employs spatially adaptive tokenization 
+                  A biologically-inspired diffusion framework that employs spatially adaptive tokenization
                   to concentrate compute on selected regions, achieving up to 4× speedups in image and video synthesis.
                 </p>
               </td>
             </tr>
+
 <!--
             <tr style="background-color: #ffffff;">
               <td style="padding:20px;width:25%;vertical-align:middle">

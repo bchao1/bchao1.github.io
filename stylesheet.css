@@ -209,3 +209,58 @@ span.highlight {
 .teaser-label {
   opacity: 1;
 }
+
+/* MPI hover-swap teaser (light field <-> focal stack) */
+.mpi-teaser {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mpi-teaser video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mpi-teaser .mpi-fs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mpi-teaser:hover .mpi-fs {
+  opacity: 1;
+}
+
+.mpi-teaser-label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 0.75rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.mpi-label-fs {
+  opacity: 0;
+}
+
+.mpi-teaser:hover .mpi-label-lf {
+  opacity: 0;
+}
+
+.mpi-teaser:hover .mpi-label-fs {
+  opacity: 1;
+}

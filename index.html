@@ -59,10 +59,11 @@
                 <h2>Research</h2>
                 <div style="text-align:center;margin-top:10px;">
                   <div id="research-filter" style="display:inline-flex;gap:6px;flex-wrap:wrap;justify-content:center;">
-                    <button onclick="filterResearch('all')" class="filter-btn active" data-filter="all">All</button>
+                    <button onclick="filterResearch('selected')" class="filter-btn active" data-filter="selected">Selected</button>
                     <button onclick="filterResearch('genai3d')" class="filter-btn" data-filter="genai3d">Generative AI and 3D</button>
                     <button onclick="filterResearch('graphics')" class="filter-btn" data-filter="graphics">Graphics and Imaging</button>
                     <button onclick="filterResearch('others')" class="filter-btn" data-filter="others">Others</button>
+                    <button onclick="filterResearch('all')" class="filter-btn" data-filter="all">All</button>
                   </div>
                 </div>
                 <style>
@@ -89,16 +90,26 @@
                 <script>
                   function filterResearch(category) {
                     document.querySelectorAll('#research-papers-table tr[data-category]').forEach(function(row) {
-                      if (category === 'all' || row.getAttribute('data-category') === category) {
-                        row.style.display = '';
+                      var show;
+                      if (category === 'all') {
+                        show = true;
+                      } else if (category === 'selected') {
+                        show = row.getAttribute('data-selected') === 'true';
                       } else {
-                        row.style.display = 'none';
+                        show = row.getAttribute('data-category') === category;
+                      }
+                      row.style.display = show ? '' : 'none';
+                      if (row.getAttribute('data-selected') === 'true') {
+                        row.style.backgroundColor = (category === 'selected') ? '#ffffff' : '#ffffd0';
                       }
                     });
                     document.querySelectorAll('.filter-btn').forEach(function(btn) {
                       btn.classList.toggle('active', btn.getAttribute('data-filter') === category);
                     });
                   }
+                  document.addEventListener('DOMContentLoaded', function() {
+                    filterResearch('selected');
+                  });
                 </script>
               </td>
             </tr>
@@ -106,7 +117,7 @@
           <table id="research-papers-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-              <tr style="background-color: #ffffd0;" data-category="genai3d">
+              <tr style="background-color: #ffffd0;" data-category="genai3d" data-selected="true">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one" style="display: flex; justify-content: center; align-items: center;">
                   <div class="two" id='smerf_image' style="width: 100%; display: flex; justify-content: center; align-items: center;">
@@ -139,7 +150,7 @@
                 </p>
               </td>
             </tr>
-            <tr style="background-color: #ffffd0;" data-category="genai3d">
+            <tr style="background-color: #ffffd0;" data-category="genai3d" data-selected="true">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one" style="display: flex; justify-content: center; align-items: center;">
                   <div class="two" id='smerf_image' style="width: 100%; display: flex; justify-content: center; align-items: center;">
@@ -172,7 +183,46 @@
               </td>
             </tr>
 
-            <tr style="background-color: #ffffff;" data-category="genai3d">
+            <tr style="background-color: #ffffff;" data-category="graphics">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="mpi-teaser">
+                  <video class="mpi-lf" width="100%" muted autoplay loop playsinline>
+                    <source src="images/mpi_light_field.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <video class="mpi-fs" width="100%" muted autoplay loop playsinline>
+                    <source src="images/mpi_focal_stack.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <span class="mpi-teaser-label mpi-label-lf">Light Field</span>
+                  <span class="mpi-teaser-label mpi-label-fs">Focal Stack</span>
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <span class="papertitle">Fast Wave-optics Rendering of Multiplane Images for 3D Holographic Displays</span>
+                </a>
+                <br>
+                <strong>Brian Chao</strong>,
+                <a href="">Dario Seyb</a>,
+                <a href="">Nathan Matsuda</a>,
+                <a href="">Oliver Cossairt</a>,
+                <a href="">Yang Zhou</a>,
+                <a href="">Douglas Lanman</a>,
+                <a href="https://web.stanford.edu/~gordonwz/">Gordon Wetzstein</a>,
+                <a href="https://grace-kuo.com/">Grace Kuo</a>,
+                <a href="https://scholar.google.co.kr/citations?user=s2uBMgkAAAAJ&hl=ko">Changwon Jang</a>
+                <br>
+                <em>arXiv</em>, 2026
+                <br>
+                <p></p>
+                <p>
+                  An efficient rendering algorithm for multiplane images (MPIs) that enables fast 3D hologram generation for next-generation holographic displays.
+                </p>
+              </td>
+            </tr>
+
+            <tr style="background-color: #ffffff;" data-category="graphics">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one" style="display: flex; justify-content: center; align-items: center;">
                   <div class="two" id='smerf_image' style="width: 100%; display: flex; justify-content: center; align-items: center;">
@@ -243,7 +293,7 @@
             
 
           
-            <tr style="background-color: #ffffff;" data-category="genai3d">
+            <tr style="background-color: #ffffd0;" data-category="genai3d" data-selected="true">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='smerf_image'>

@@ -264,3 +264,29 @@ span.highlight {
 .mpi-teaser:hover .mpi-label-fs {
   opacity: 1;
 }
+.paperlinks {
+  margin-top: 6px;
+  font-size: 0.95em;
+}
+
+.paperlinks .sep {
+  color: #aaa;
+  margin: 0 4px;
+}
+
+.impact {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  display: block;
+  margin: 8px 0 2px 0;
+  padding: 7px 11px;
+  background-color: rgba(23, 114, 208, 0.07);
+  border-left: 3px solid #1772d0;
+  border-radius: 0 4px 4px 0;
+}
+
+.impact-label {
+  font-weight: 700;
+  color: #1772d0;
+}

@@ -30,7 +30,7 @@
                 </p>
                 <p>
                   I study how visual generative models should represent information and allocate computation.
-                  My recent work explores adaptive representations for diffusion models across space, scale, and time (<a href="https://bchao1.github.io/foveated-diffusion/">Foveated Diffusion</a>, <a href="https://howardxiao.ca/speed/">Spectral Progressive Diffusion</a>),
+                  My recent work explores adaptive representations for diffusion models across space, scale, and time (<a href="https://bchao1.github.io/foveated-diffusion/">Foveated Diffusion</a>, <a href="https://howardxiao.ca/speed/">Spectral Progressive Diffusion</a>, <a href="https://georgenakayama.github.io/lotdiffusion/">Level-of-Token Diffusion</a>),
                   with broader interests in video, world models, and the interface between reasoning and visual generation.
                   I've also worked on 4D world modeling at Waymo Research.
                 </p>
@@ -83,6 +83,9 @@
                     <button onclick="filterResearch('others')" class="filter-btn" data-filter="others">Others</button>
                     <button onclick="filterResearch('all')" class="filter-btn" data-filter="all">All</button>
                   </div>
+                  <p id="selected-note" style="font-size:13px;color:#666;margin:10px 0 0 0;">
+                    Selected papers shown. <a href="javascript:void(0)" onclick="filterResearch('all')">See all <span id="all-count"></span> publications</a> across generative AI, 3D, and computational imaging.
+                  </p>
                 </div>
                 <style>
                   .filter-btn {
@@ -124,8 +127,24 @@
                     document.querySelectorAll('.filter-btn').forEach(function(btn) {
                       btn.classList.toggle('active', btn.getAttribute('data-filter') === category);
                     });
+                    document.getElementById('selected-note').style.display = (category === 'selected') ? '' : 'none';
+                  }
+                  function addFilterCounts() {
+                    var rows = document.querySelectorAll('#research-papers-table tr[data-category]');
+                    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+                      var f = btn.getAttribute('data-filter');
+                      var count = 0;
+                      rows.forEach(function(row) {
+                        if (f === 'all' ||
+                            (f === 'selected' && row.getAttribute('data-selected') === 'true') ||
+                            row.getAttribute('data-category') === f) count++;
+                      });
+                      btn.textContent += ' (' + count + ')';
+                    });
+                    document.getElementById('all-count').textContent = rows.length;
                   }
                   document.addEventListener('DOMContentLoaded', function() {
+                    addFilterCounts();
                     filterResearch('selected');
                   });
                 </script>
@@ -134,6 +153,46 @@
           </tbody></table>
           <table id="research-papers-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+              <tr style="background-color: #ffffd0;" data-category="genai3d" data-selected="true">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="display: flex; justify-content: center; align-items: center;">
+                  <div class="two" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                    <video width=100% muted autoplay loop playsinline style="max-width: 100%; height: auto; display: block;">
+                      <source src="images/lot_diffusion.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://georgenakayama.github.io/lotdiffusion/">
+                  <span class="papertitle">Level-of-Token Diffusion</span>
+                </a>
+                <br>
+                <a href="https://georgenakayama.github.io/">Kiyohiro Nakayama</a>,
+                <strong>Brian Chao</strong>,
+                <a href="https://janackermann.info/">Jan Ackermann</a>,
+                <a href="https://hanshengchen.com/">Hansheng Chen</a>,
+                <a href="https://research.google/people/federicotombari/">Federico Tombari</a>,
+                <a href="https://profiles.stanford.edu/leonidas-guibas">Leonidas Guibas</a>,
+                <a href="https://lioryariv.github.io/">Lior Yariv</a>,
+                <a href="https://web.stanford.edu/~gordonwz/">Gordon Wetzstein</a>
+                <br>
+                <em>arXiv</em>, 2026
+                <p></p>
+                <p>
+                  Level-of-Token (LOT) is a <strong>generative</strong> Level-of-Detail (LOD) diffusion framework that allocates token budget based on input control signals,
+                  achieving up to 4× speedup in image and video generation.
+                </p>
+                <div class="paperlinks">
+                  <a href="https://georgenakayama.github.io/lotdiffusion/">Project Page</a> <span class="sep">|</span>
+                  <a href="https://arxiv.org/abs/2610.05816">Paper</a> <span class="sep">|</span>
+                  <a href="https://x.com/GordonWetzstein/status/2107506060202537337">X Thread</a> <span class="sep">|</span>
+                  <a href="images/animations/lot_diffusion.mp4">Animation</a>
+                </div>
+              </td>
+            </tr>
 
               <tr style="background-color: #ffffd0;" data-category="genai3d" data-selected="true">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -157,7 +216,7 @@
                 <a href="https://lioryariv.github.io/">Lior Yariv</a>,
                 <a href="https://web.stanford.edu/~gordonwz/">Gordon Wetzstein</a>
                 <br>
-                <em>NeurIPS</em>, 2026
+                <strong><em>NeurIPS</em></strong>, 2026
                 <div class="impact">
                   <span class="impact-label">Adopted by SGLang:</span>
                   available as an experimental feature in
@@ -301,7 +360,7 @@
               </td>
             </tr>
 
-            <tr style="background-color: #ffffff;" data-category="genai3d">
+            <tr style="background-color: #ffffd0;" data-category="genai3d" data-selected="true">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one" style="display: flex; justify-content: center; align-items: center;">
                   <div class="two" id='smerf_image' style="width: 100%; display: flex; justify-content: center; align-items: center;">
@@ -324,7 +383,7 @@
                 <a href="https://manugopa.github.io/">Manu Gopakumar</a>,
                 <a href="https://web.stanford.edu/~gordonwz/">Gordon Wetzstein</a>
                 <br>
-                <em>SIGGRAPH</em>, 2025
+                <strong><em>SIGGRAPH</em></strong>, 2025
                 <br>
                 <em>CVPR <a href="https://neural-bcc.github.io/">Neural Fields Beyond Conventional Cameras</a> & <a href="https://kristinamonakhova.com/ccd2025/">CCD</a> Workshop</em>, 2025
                 <br>
@@ -388,7 +447,7 @@
                 <a href="https://web.stanford.edu/~gordonwz/">Gordon Wetzstein</a>,
                 <a href="https://changilkim.com/">Changil Kim</a>
                 <br>
-                <em>CVPR</em>, 2025
+                <strong><em>CVPR</em></strong>, 2025
                 <br>
                 <p></p>
                 <p>
@@ -424,7 +483,7 @@
                 <a href="https://research.nvidia.com/person/jonghyun-kim">Jonghyun Kim</a>,
                 <a href="https://web.stanford.edu/~gordonwz/">Gordon Wetzstein</a>
                 <br>
-                <em>SIGGRAPH Asia</em>, 2024
+                <strong><em>SIGGRAPH Asia</em></strong>, 2024
                 <br>
                 <p></p>
                 <p>
@@ -464,7 +523,7 @@
                 <a href="https://research.nvidia.com/person/jonghyun-kim">Jonghyun Kim</a>,
                 <a href="https://web.stanford.edu/~gordonwz/">Gordon Wetzstein</a>
                 <br>
-                <em>Nature</em>, 2024
+                <strong><em>Nature</em></strong>, 2024
                 <br>
                 <p></p>
                 <p>
@@ -607,7 +666,7 @@
         <a href="">Chang-Le Liu*</a>,
         <a href="https://www.ee.ntu.edu.tw/bio1.php?id=60">Homer H. Chen</a>
         <br>
-        <em>IEEE Transactions on Image Processing</em>, 2022
+        <em>IEEE TIP</em>, 2022
         <br>
         <p></p>
         <p>
@@ -637,7 +696,7 @@
         <a href="">Chang-Le Liu</a>,
         <a href="https://www.ee.ntu.edu.tw/bio1.php?id=60">Homer H. Chen</a>
         <br>
-        <em>IEEE International Conference on Image Processing (ICIP)</em>, 2021
+        <em>ICIP</em>, 2021
         <br>
         <p></p>
         <p>
@@ -668,7 +727,7 @@
         <a href="https://speech.ee.ntu.edu.tw/~tlkagk/">Hung-yi Lee</a>,
         <a href="https://vllab.ee.ntu.edu.tw/members.html">Y.C. Frank Wang</a>
         <br>
-        <em>IEEE Internation Conference on Acoustics, Speech, and Signal Processing (ICASSP)</em>, 2020
+        <em>ICASSP</em>, 2020
         <br>
         <p></p>
         <p>

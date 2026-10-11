@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Brian Chao | Blog and Personal Projects</title>
+
+    <meta name="author" content="Brian Chao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;vertical-align:middle">
+                <p style="margin-bottom:0px;">
+                  <a href="index.html">&larr; Back to main page</a>
+                </p>
+                <p class="name" style="text-align: center;">
+                  Blog and Personal Projects
+                </p>
+                <p>
+                  Outside of my research, I like building things for fun and writing about ideas I find interesting.
+                  This page collects my personal projects and blog posts.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <div style="text-align:center;margin-top:10px;">
+                  <div id="item-filter" style="display:inline-flex;gap:6px;flex-wrap:wrap;justify-content:center;">
+                    <button onclick="filterItems('all')" class="filter-btn active" data-filter="all">All</button>
+                    <button onclick="filterItems('project')" class="filter-btn" data-filter="project">Projects</button>
+                    <button onclick="filterItems('blog')" class="filter-btn" data-filter="blog">Blog Posts</button>
+                  </div>
+                </div>
+                <style>
+                  .filter-btn {
+                    padding: 5px 14px;
+                    border: 1.5px solid #aaa;
+                    border-radius: 20px;
+                    background: #fff;
+                    color: #444;
+                    font-size: 13px;
+                    cursor: pointer;
+                    transition: background 0.15s, color 0.15s, border-color 0.15s;
+                  }
+                  .filter-btn:hover {
+                    border-color: #555;
+                    color: #111;
+                  }
+                  .filter-btn.active {
+                    background: #333;
+                    color: #fff;
+                    border-color: #333;
+                  }
+                </style>
+                <script>
+                  function filterItems(category) {
+                    var shown = 0;
+                    document.querySelectorAll('#items-table tr[data-category]').forEach(function(row) {
+                      var show = (category === 'all') || row.getAttribute('data-category') === category;
+                      row.style.display = show ? '' : 'none';
+                      if (show) shown++;
+                    });
+                    document.getElementById('empty-note').style.display = shown ? 'none' : '';
+                    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+                      btn.classList.toggle('active', btn.getAttribute('data-filter') === category);
+                    });
+                  }
+                  function addFilterCounts() {
+                    var rows = document.querySelectorAll('#items-table tr[data-category]');
+                    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+                      var f = btn.getAttribute('data-filter');
+                      var count = 0;
+                      rows.forEach(function(row) {
+                        if (f === 'all' || row.getAttribute('data-category') === f) count++;
+                      });
+                      btn.textContent += ' (' + count + ')';
+                    });
+                  }
+                  document.addEventListener('DOMContentLoaded', function() {
+                    addFilterCounts();
+                    filterItems('all');
+                  });
+                </script>
+              </td>
+            </tr>
+          </tbody></table>
+          <table id="items-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr data-category="project">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="display: flex; justify-content: center; align-items: center;">
+                  <video width=100% muted autoplay loop playsinline style="max-width: 100%; height: auto; display: block;">
+                    <source src="images/kamon.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://bchao1.github.io/kamon/">
+                  <span class="papertitle">Kamon, taken apart</span>
+                </a>
+                <br>
+                <em>Project</em>, 2026
+                <p></p>
+                <p>
+                  I've grown a deep interest in <em>kamon</em> (家紋 / かもん), the family crests often seen at castles, shrines, and temples from the <em>bushi</em> (武士 / ぶし) era,
+                  throughout my 18 trips to almost every part of Japan. I wanted to see how such complex designs come from just a compass and a ruler.
+                  This is an interactive page that breaks down twenty crests of the Sengoku-era houses into the compass-and-ruler strokes
+                  they were drawn with, plus a workshop for designing your own.
+                </p>
+                <div class="paperlinks">
+                  <a href="https://bchao1.github.io/kamon/">Website</a>
+                  <!-- <span class="sep">|</span> <a href="projects/kamon/">Blog Post</a> (draft, add back when ready) -->
+                </div>
+              </td>
+            </tr>
+
+            <tr id="empty-note" style="display:none;">
+              <td colspan="2" style="padding:20px;text-align:center;color:#666;">
+                Nothing here yet. Check back soon.
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Website source code from <a href="https://github.com/jonbarron/jonbarron_website">here</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

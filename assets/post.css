@@ -1,0 +1,153 @@
+/* Blog posts and project write-ups (blog/*, projects/*). Loaded after stylesheet.css. */
+
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+  color: #222;
+}
+
+.post p,
+.post li,
+.post a,
+.post td,
+.post th,
+.post strong {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.post-back a {
+  font-size: 14px;
+}
+
+.post h1 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 28px 0 4px;
+}
+
+/* the italic line right after the title is the date */
+.post h1 + p em:only-child {
+  color: #666;
+  font-size: 14px;
+}
+
+.post h2 {
+  font-size: 22px;
+  margin: 40px 0 8px;
+}
+
+.post h3 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 28px 0 6px;
+}
+
+.post figure {
+  margin: 28px 0;
+}
+
+.post figure img,
+.post figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.post figcaption,
+.post .fig-row-caption {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.post figcaption a,
+.post .fig-row-caption a {
+  font-size: 14px;
+}
+
+.post .fig-row-wrap {
+  margin: 28px 0;
+}
+
+.post .fig-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.post .fig-row figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.post .fig-row-caption {
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .post .fig-row {
+    flex-direction: column;
+  }
+  .post .fig-row figure {
+    flex: 1 1 auto !important;
+    width: 100%;
+  }
+}
+
+.post blockquote {
+  margin: 20px 0;
+  padding: 2px 16px;
+  border-left: 3px solid #ddd;
+  color: #555;
+}
+
+.post code {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: #f4f4f4;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.post pre {
+  background: #f6f6f6;
+  padding: 12px 14px;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+.post pre code {
+  background: none;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.post hr {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin: 36px 0;
+}
+
+.post table {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.post th,
+.post td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 6px 12px;
+  text-align: left;
+}
+
+.post .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}

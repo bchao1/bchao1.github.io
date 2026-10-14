@@ -863,37 +863,44 @@
   .talks .talk-where { color: #444; }
   .talks .talk-upcoming { display: inline-block; margin-left: 6px; padding: 0 7px; border: 1px solid #1772d0; border-radius: 10px; color: #1772d0; font-size: 11px; line-height: 16px; vertical-align: 1px; }
 </style>
-<!-- Newest first. For a talk that hasn't happened yet, add <span class="talk-upcoming">Upcoming</span> after the title. -->
+<!-- Newest first. data-date is the talk date (YYYY-MM-DD, or YYYY-MM if the day is unknown). An "Upcoming" badge shows automatically until that date passes. -->
 <table class="talks" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
+  <tr data-date="2026-11">
+    <td class="talk-date">Nov 2026</td>
+    <td>
+      <span class="talk-title">Efficient Diffusion across Frequency and Time</span><br>
+      <span class="talk-where"><a href="https://research.adobe.com/">Adobe Research</a>, hosted by <a href="https://richzhang.github.io/">Richard Zhang</a> and <a href="https://krsingh.cs.ucdavis.edu/">Krishna Kumar Singh</a></span>
+    </td>
+  </tr>
+  <tr data-date="2026-10">
     <td class="talk-date">Oct 2026</td>
     <td>
-      <span class="talk-title">Efficient Diffusion across Frequency and Time</span><span class="talk-upcoming">Upcoming</span><br>
+      <span class="talk-title">Efficient Diffusion across Frequency and Time</span><br>
       <span class="talk-where"><a href="https://veeda.ai/">Veeda AI</a>, hosted by <a href="https://zgojcic.github.io/">Zan Gojcic</a></span>
     </td>
   </tr>
-  <tr>
+  <tr data-date="2026-10">
     <td class="talk-date">Oct 2026</td>
     <td>
-      <span class="talk-title">Efficient Diffusion across Frequency and Time</span><span class="talk-upcoming">Upcoming</span><br>
+      <span class="talk-title">Efficient Diffusion across Frequency and Time</span><br>
       <span class="talk-where"><a href="https://gradientspaces.stanford.edu/">Gradient Spaces Group</a>, Stanford, hosted by <a href="https://sayands.github.io/">Sayan Deb Sarkar</a></span>
     </td>
   </tr>
-  <tr>
+  <tr data-date="2026-05">
     <td class="talk-date">May 2026</td>
     <td>
       <a class="talk-title" href="https://bchao1.github.io/foveated-diffusion/">Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation</a><br>
       <span class="talk-where"><a href="https://graphics.stanford.edu/">Stanford Graphics Cafe Seminar</a></span>
     </td>
   </tr>
-  <tr>
+  <tr data-date="2026-04">
     <td class="talk-date">Apr 2026</td>
     <td>
       <a class="talk-title" href="https://bchao1.github.io/foveated-diffusion/">Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation</a><br>
       <span class="talk-where"><a href="https://research.nvidia.com/">NVIDIA Research</a>, hosted by <a href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a></span>
     </td>
   </tr>
-  <tr>
+  <tr data-date="2026-04">
     <td class="talk-date">Apr 2026</td>
     <td>
       <a class="talk-title" href="https://bchao1.github.io/foveated-diffusion/">Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation</a><br>
@@ -901,6 +908,22 @@
     </td>
   </tr>
 </tbody></table>
+<script>
+  // "Upcoming" badge until the talk date passes (end of the month when only YYYY-MM is given)
+  (function () {
+    var now = new Date();
+    document.querySelectorAll('.talks tr[data-date]').forEach(function (row) {
+      var p = row.getAttribute('data-date').split('-').map(Number);
+      var end = p[2] ? new Date(p[0], p[1] - 1, p[2] + 1) : new Date(p[0], p[1], 1);
+      if (now < end) {
+        var b = document.createElement('span');
+        b.className = 'talk-upcoming';
+        b.textContent = 'Upcoming';
+        row.querySelector('.talk-title').after(b);
+      }
+    });
+  })();
+</script>
 
 
 <!--
